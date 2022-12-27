@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+  <title>Event Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- BODY -->
+
+<body>
+  <h1 id="title">Event Registration Form</h1>
+  <p id="description"><em>Sign up for upcoming events with our organization.</em> </p>
+  <!-- Survey Form -->
+  <form id="survey-form" action="">
+    <fieldset>
+      <label for="name" id="name-label">
+        Name <input id="name" type="text" placeholder="Enter your name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email <input id="email" type="email" placeholder="Enter your email" required />
+      </label>
+      <label for="class-year" id="number-label">
+        Class Year <input id="number" type="number" min="2022" max="2026" placeholder="Year" />
+      </label>
+      <label for="major">
+        Major <input id="major" type="text" placeholder="Enter your major" required />
+      </label>
+      <!-- Dropdown -->
+      <label for="referral" id="referral-label">How did you hear about us?
+        <select id="dropdown">
+          <option value="" disabled placeholder selected id="disabled">Select an option</option>
+          <option value="1">Newsletter</option>
+          <option value="2">Instagram</option>
+          <option value="3">Friend</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+      <!-- Radio -->
+      <label for="newsletter" id="newsletter-label">Would you like to recieve the biweekly newsletter?
+        <div></div>
+        <input id="yes" name="sign-up" type="radio" class="inline" value="Yes" /> Yes
+        <div></div>
+        <input id="no" name="sign-up" type="radio" class="inline" value="No" /> No
+      </label>
+
+      </label>
+      <!-- Checkbox -->
+      <label for="events" id="events-label">Which events would you like to sign up for? <div></div>
+        <input id="event1" type="checkbox" value="event2" class="inline" /> Event 1 <div></div>
+        <input id="event2" type="checkbox" class="inline" value="event1" /> Event 2 <div></div>
+        <input id="event3" type="checkbox" value="event3" class="inline" /> Event 3 <div></div>
+        <input id="event4" type="checkbox" value="event4" class="inline" /> Event 4
+      </label>
+      <!-- Text Area -->
+      <label>
+        Any comments or suggestions?
+        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
+<footer>
+  <p> made by Brianna Li for <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
+</footer>
+
+</html>
